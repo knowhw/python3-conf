@@ -3,7 +3,9 @@ from conf import module
 
 
 
+
 def read(key):
+	
 	
 	key = [item for item in key.split(chr(47)) if item]
 	
@@ -11,8 +13,13 @@ def read(key):
 	return read.strip() 
 def write(key, value):
 	
+	value = module.dumps(str(value))
 	
-	return module.write("%s %s/ %s" % (module.attrib.write, value))
+	if value == '"False"': value = "false"
+	elif value == '"True"': value = "true"
+	
+	
+	return module.write("%s %s '%s'" % (module.attrib.write, key, value))
 def list(directory):
 	
 	dirs = [item for item in directory.split(chr(47)) if item]
