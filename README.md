@@ -23,7 +23,7 @@ sudo cp -R python3-dconf/dconf /usr/local/lib/python3.10
 
 ## Library usage
 ~~~python
-import dconf
+import conf
 
 directory = '/net/launchpad/plank/docks/dock1/icon-size'
 conf.write(directory, 34)
