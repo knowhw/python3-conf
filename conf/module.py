@@ -13,6 +13,5 @@ attrib.dump="dconf dump"
 attrib.laod="dconf load"
 
 def watch(d):
-	''' d: system database directory '''
 	for item in call(["dconf", "watch", d]):
 		yield item 
