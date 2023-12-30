@@ -1,6 +1,7 @@
 from json import dumps
 from os import popen 
 from os import system as write
+from subprocess import call
 
 class attrib: pass
 
@@ -11,3 +12,7 @@ attrib.list="dconf list"
 attrib.dump="dconf dump"
 attrib.laod="dconf load"
 
+def watch(d):
+	''' d: system database directory '''
+	for item in call(["dconf", "watch", d]):
+		yield item 
