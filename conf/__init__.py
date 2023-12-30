@@ -34,11 +34,13 @@ def load(directory, dumpf):
 	
 def dump(directory):
 	return module.popen("%s %s" % (module.attrib.dump, directory)).read()
+def watch():
+	return module.watch()
 	
 def export(path, dump):
 	with open(path, "w") as f : 
 		f.write(dump)
-
+		
 
 
 
