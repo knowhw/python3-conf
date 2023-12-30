@@ -27,11 +27,13 @@ import conf
 
 directory = '/net/launchpad/plank/docks/dock1/icon-size'
 conf.write(directory, 34)
-data = conf.read(directory)
+size = conf.read(directory)
+print(size)
 ...
 
 directory = '/net/launchpad/plank/docks/dock1'
 listkey = conf.listkey(directory)
+print(listkey)
 ...
 ~~~
 
