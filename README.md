@@ -11,8 +11,7 @@
 <br/>
 
 # #python3-dconf Python Library
-dconf is read write list load dump watch and export library. it work on the system database.
-<br/>
+dconf is read, write, key list, load, dump, dir watch and database export library. it work on the system database.<br/>
 <br/>
 
 ## Installation
