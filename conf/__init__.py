@@ -3,7 +3,6 @@ from conf import module
 
 
 
-
 def read(key):
 	
 	key = [item for item in key.split(chr(47)) if item]
