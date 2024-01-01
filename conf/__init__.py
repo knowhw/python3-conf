@@ -30,11 +30,11 @@ def listkey(directory):
 	
 	return [key.strip() for key in keylist]
 def load(directory, dumpf):
-	""" dumpf: database.db """
+	""" dumpf: database.ini """
 	module.write("%s %s < %s" % (module.attrib.load, directory, dumpf))
 	
 def dump(directory):
-	""" directory: ../database.db """
+	""" directory: ../database.ini """
 	return module.popen("%s %s" % (module.attrib.dump, directory)).read()
 def watch(directory):
 	return module.watch(directory)
