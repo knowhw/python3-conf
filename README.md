@@ -17,7 +17,7 @@ dconf is read, write, key list, load, dump, dir watch and database export librar
 ## Installation
 ~~~bash
 git clone https://github.com/knowhw/python3-dconf.git
-sudo cp -R python3-dconf/dconf /usr/local/lib/python3.10
+sudo cp -R python3-dconf/conf /usr/local/lib/python3.10
 ~~~
 
 ## Library usage
