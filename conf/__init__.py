@@ -34,6 +34,7 @@ def load(directory, dumpf):
 	module.write("%s %s < %s" % (module.attrib.load, directory, dumpf))
 	
 def dump(directory):
+	""" directory: ../database.db """
 	return module.popen("%s %s" % (module.attrib.dump, directory)).read()
 def watch(directory):
 	return module.watch(directory)
