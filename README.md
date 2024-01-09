@@ -10,9 +10,8 @@
 
 <br/>
 
-# #python3-dconf Python Library
-dconf is read, write, key list, load, dump, dir watch and database export library. it work on the system database.<br/>
-<br/>
+# #python3-dconf Python Module
+dconf is read, write, key list, load, dump, dir watch and database export module. it work on the system database.<br/>
 
 ## Installation
 ~~~bash
@@ -20,7 +19,7 @@ git clone https://github.com/knowhw/python3-dconf.git
 sudo cp -R python3-dconf/conf /usr/local/lib/python3.10
 ~~~
 
-## Library usage
+## Module usage
 ~~~python
 import conf
 
